@@ -4,24 +4,60 @@
   <meta charset="UTF-8">
   <title>Seoul Hitchhiker Studio</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 40px; background: #f8f8f8; }
-    img { max-width: 100%; height: auto; border-radius: 8px; }
-    .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* 수평 정렬 */
+      align-items: center;     /* 수직 정렬 */
+      background-color: #f8f8f8;
+      font-family: sans-serif;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .email {
+      font-weight: bold;
+      color: #444;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Seoul Hitchhiker Studio</h1>
     <img src="seoulhitchhikerstudio.jpg" alt="Game Banner">
-    <h2>🎮 게임 제목: [Your Game Title]</h2>
-    <p>사회 고발 미스터리 어드벤처 게임.  
-    후배의 죽음과 부조리한 현실을 마주하다.</p>
-
-    <h3>🧑‍💻 제작 의도</h3>
-    <p>진실을 외면하지 않기 위해, 한 사람의 개발자가 시작한 프로젝트입니다.</p>
-
-    <h3>📬 연락처</h3>
-    <p>Email: seoulhitchhikerstudio@gmail.com</p>
+    <h1>Seoul Hitchhiker Studio</h1>
+    <p>사회 고발 미스터리 어드벤처 게임<br>
+    후배의 죽음과 부조리를 다룬 1인 개발자의 첫 작품입니다.</p>
+    <p class="email">📬 seoulhitchhikerstudio@gmail.com</p>
   </div>
 </body>
 </html>
